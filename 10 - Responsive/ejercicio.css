@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-size: 2rem;
+}
+
+.contenedor{
+    display: flex;
+    background-color: orange;
+    color: white;
+    justify-content:space-around;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.seccion{
+    justify-content: end;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    flex-grow:nowrap;
+}
+
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .contenedor{
+        flex-direction: row;
+    }
+}
